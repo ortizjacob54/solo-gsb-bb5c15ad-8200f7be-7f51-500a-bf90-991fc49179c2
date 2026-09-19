@@ -1,0 +1,13 @@
+services:
+  api:
+    build: .
+    image: recurrence-expansion-api:latest
+    container_name: recurrence-expansion-api
+    ports:
+      - "8000:8000"
+    environment:
+      # All optional; these are the built-in defaults.
+      OCCURRENCES_DEFAULT_LIMIT: "1000"
+      OCCURRENCES_MAX_LIMIT: "100000"
+      OCCURRENCES_SCAN_CAP: "500000"
+    restart: unless-stopped

@@ -1,0 +1,12 @@
+.git
+.gitignore
+.dockerignore
+Dockerfile
+docker-compose.yml
+__pycache__/
+*.py[cod]
+.pytest_cache/
+tests/
+conftest.py
+requirements-dev.txt
+*.md
